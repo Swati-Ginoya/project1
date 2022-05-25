@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React at RNW1
+          React : A Javascript library for building user interface.
         </a>
       </header>
     </div>
