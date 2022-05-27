@@ -1,24 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import Demo from './component/Demo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          React : A Javascript library for building user interface.
-        </a>
-      </header>
-    </div>
+   <Demo/>
   );
 }
 
