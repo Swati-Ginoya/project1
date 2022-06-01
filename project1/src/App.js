@@ -46,6 +46,12 @@ function App() {
       status: false
     }
   ];
+
+  let fData = data.filter((d,i) => d.status === true && d.expiry >= 2022);
+  console.log(fData);
+
+  let sum = fData.reduce((acc ,d,i) => acc + d.price ,0)
+  console.log(sum);
   return (
     <table border = "1" align = "center" cellPadding = "10" cellSpacing="0">
       <tr>
@@ -55,19 +61,21 @@ function App() {
         <td>Price</td>
         <td>Expiry</td>
         <td>Status</td>
+        <td>Total price</td>
       </tr>
 
       {
-        data.map((d,i) => {
+        fData.map((d,i) => {
           let {id,name,quantity,price,expiry,status} =d;
           return(
-            <tr>
+            <tr key={i}>
               <td>{id}</td>
               <td>{name}</td>
               <td>{quantity}</td>
               <td>{price}</td>
               <td>{expiry}</td>
               <td>{status.toString()}</td>
+              {i === 0 ? <td rowSpan={2}>{sum}</td> : null}
             </tr>
           )
         })
