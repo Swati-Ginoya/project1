@@ -1,12 +1,14 @@
-import React from 'react';
-import City from './container/City';
+import React, { Component } from 'react';
+import CityFun from './container/CityFun';
 
-function App(props) {
-  return (
-    <div>
-      <City />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <CityFun/>
+      </div>
+    );
+  }
 }
 
 export default App;
