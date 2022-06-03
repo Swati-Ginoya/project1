@@ -7,7 +7,7 @@ class City extends Component {
             CityName :'Surat'
         }
     }
-    ChangeCountry = () => {
+    ChangeCity = () => {
         this.setState({
             CityName : 'Gandhinagar'
         })
@@ -17,7 +17,8 @@ class City extends Component {
         return (
             <div>
                 <p>{this.state.CityName}</p>
-                <button onClick={() => this.ChangeCountry()} className="btn">Change City</button>
+                <button onClick={() => this.ChangeCity()} className="btn">Change City</button>
+                <p>{this.props.id}{this.props.Country_Name} </p>
             </div>
         );
     }
