@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function cityFun(props) {
+function CityFun(props) {
     const [CityName , SetCityName] = useState ('Surat');
 
     const ChangeCity = () => {
@@ -14,4 +14,4 @@ function cityFun(props) {
     );
 }
 
-export default cityFun;
+export default CityFun;
