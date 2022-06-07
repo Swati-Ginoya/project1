@@ -1,14 +1,13 @@
 import React from 'react';
-import City from './container/City';
-import CityFun from './container/CityFun';
-import Country from './container/Country';
-import CountryFun from './container/CountryFun';
 import Time from './container/Time/Time';
+import TimeFun from './container/Time/TimeFun';
 
 function App(props) {
   return (
     <div>
-      <Time />
+      <TimeFun />
+      {/* <City /> */}
+      {/* <CityFun /> */}
     </div>
   );
 }
