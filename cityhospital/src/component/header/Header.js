@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Header(props) {
-    return(
+    return (
         <div className="main-header">
             <div id="topbar" className="d-flex align-items-center fixed-top">
                 <div className="container d-flex justify-content-between">
@@ -44,8 +44,7 @@ function Header(props) {
             </header>
         </div>
 
-    )
-
+    );
 }
 
 export default Header;
